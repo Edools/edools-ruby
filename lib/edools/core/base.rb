@@ -2,6 +2,7 @@ module Edools
   module Core
     class Base < ActiveResource::Base
       self.site = Edools::CORE_BASE_URL
+      self.include_root_in_json = true
 
       def self.refresh_config!
         self.format = ActiveResource::Formats::JsonFormat if Edools.format == :json

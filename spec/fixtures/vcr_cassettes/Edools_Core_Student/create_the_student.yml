@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://core.edools.com/students.json
+    body:
+      encoding: UTF-8
+      string: '{"user":{"first_name":"Teste","email":"teste1@edools.com","password":"123456","password_confirmation":"123456"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jul 2014 20:26:53 GMT
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 500 Internal Server Error
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - b1dcc9a5-d6e2-4520-a0f8-a85986812b22
+      X-Runtime:
+      - '0.588097'
+      Content-Length:
+      - '48'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"status":"500","error":"Internal Server Error"}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 20:26:54 GMT
+recorded_with: VCR 2.9.2
