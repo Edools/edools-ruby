@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/students.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 25 Jul 2014 15:57:03 GMT
+      Etag:
+      - '"ea1e582b336a71fe68cb977a268dd69e"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 6749f565-2960-4e83-81c1-ad679d53ea86
+      X-Runtime:
+      - '0.068061'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"students":[{"id":1249,"first_name":"Ali Ismayilov","last_name":null,"email":"ali@ismailov.info","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":"00f95fc792bfabdd7dc4adeeabeaa11ea5f2394a2f1af1ccd5960686f5f0ff77","registrations":[{"id":134,"status":"Active","school_id":224,"enrollments":[]}]},{"id":1024,"first_name":"Denise","last_name":"Steiner","email":"denisesteiner@mail.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"http://infinite-woodland-5276.herokuapp.com/assets/demo/avatars/5.jpg","invitation_token":null,"registrations":[{"id":72,"status":"Trial","school_id":224,"enrollments":[]}]},{"id":1023,"first_name":"Denise","last_name":"Steiner","email":"denisesteiner@email.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":71,"status":"Trial","school_id":224,"enrollments":[]}]},{"id":1628,"first_name":"Vinicius","last_name":null,"email":"vinicius@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":486,"status":"Active","school_id":224,"enrollments":[]}]},{"id":1246,"first_name":"Diogo","last_name":"","email":"diogo.beda@gmail.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":133,"status":"Trial","school_id":224,"enrollments":[]}]}],"current_page":1,"per_page":10,"total_pages":1,"total_count":5}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 15:57:03 GMT
+recorded_with: VCR 2.9.2
