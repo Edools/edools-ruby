@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://core.edools.com/students/1249.json
+    uri: https://core.edools.com/students/1671.json
     body:
       encoding: US-ASCII
       string: ''
@@ -30,9 +30,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 25 Jul 2014 15:57:02 GMT
+      - Tue, 29 Jul 2014 12:38:39 GMT
       Etag:
-      - '"c91b4b955d2482e303a14cfa03316dcc"'
+      - '"658594acc1fa8720f429237b8ce0da06"'
       Server:
       - nginx/1.4.7
       Status:
@@ -44,9 +44,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - f0f4cc96-7101-4ce9-b328-b8d969ced782
+      - 6da2c1f5-9b03-47ec-9f2b-59a3c55811ef
       X-Runtime:
-      - '0.044195'
+      - '0.076067'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -55,7 +55,7 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":1249,"first_name":"Ali Ismayilov","last_name":null,"email":"ali@ismailov.info","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":"00f95fc792bfabdd7dc4adeeabeaa11ea5f2394a2f1af1ccd5960686f5f0ff77","registrations":[{"id":134,"status":"Active","school_id":224,"enrollments":[]}]}'
+      string: '{"id":1671,"first_name":"Teste","last_name":null,"email":"teste6@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":503,"code":"20140729123233878","school_id":224,"status":"Trial","enrollments":[]}]}'
     http_version: 
-  recorded_at: Fri, 25 Jul 2014 15:57:03 GMT
+  recorded_at: Tue, 29 Jul 2014 12:38:39 GMT
 recorded_with: VCR 2.9.2

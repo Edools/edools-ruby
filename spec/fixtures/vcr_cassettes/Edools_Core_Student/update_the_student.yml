@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://core.edools.com/students/1249.json
+    uri: https://core.edools.com/students/1671.json
     body:
       encoding: US-ASCII
       string: ''
@@ -17,30 +17,157 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 25 Jul 2014 18:28:58 GMT
+      - Tue, 29 Jul 2014 12:48:42 GMT
+      Etag:
+      - '"658594acc1fa8720f429237b8ce0da06"'
       Server:
       - nginx/1.4.7
       Status:
-      - 404 Not Found
+      - 200 OK
       Strict-Transport-Security:
-      - max-age=31536000
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
       X-Request-Id:
-      - 5ffd9f73-052c-49b2-ae73-bcb3f9642ce2
+      - 4a9cb8ec-cd24-4c12-a05c-90d93c1fb2b3
       X-Runtime:
-      - '1.354777'
-      Content-Length:
-      - '36'
+      - '0.033244'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"status":"404","error":"Not Found"}'
+      string: '{"id":1671,"first_name":"Teste","last_name":null,"email":"teste6@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":503,"code":"20140729123233878","school_id":224,"status":"Trial","enrollments":[]}]}'
     http_version: 
-  recorded_at: Fri, 25 Jul 2014 18:29:02 GMT
+  recorded_at: Tue, 29 Jul 2014 12:48:42 GMT
+- request:
+    method: put
+    uri: https://core.edools.com/students/1671.json
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1671,"first_name":"Teste","last_name":null,"email":"teste6@edools.com","cpf":null,"phone":"1406638122","skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"registration":{"id":503,"code":"20140729123233878","school_id":224,"status":"Trial","enrollments":[]}}]}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Date:
+      - Tue, 29 Jul 2014 12:48:43 GMT
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 204 No Content
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 9e1ab62c-18ac-4888-a5b5-b2a4c786d38a
+      X-Runtime:
+      - '0.078147'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 29 Jul 2014 12:48:43 GMT
+- request:
+    method: get
+    uri: https://core.edools.com/students/1671.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 29 Jul 2014 12:48:44 GMT
+      Etag:
+      - '"b349c5a68c4741042b54d6f6b46361c8"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 8cb6ceb8-b5d3-4e66-a1c8-c4ca06bc831f
+      X-Runtime:
+      - '0.052439'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1671,"first_name":"Teste","last_name":null,"email":"teste6@edools.com","cpf":null,"phone":"1406638122","skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":503,"code":"20140729123233878","school_id":224,"status":"Trial","enrollments":[]}]}'
+    http_version: 
+  recorded_at: Tue, 29 Jul 2014 12:48:44 GMT
 recorded_with: VCR 2.9.2

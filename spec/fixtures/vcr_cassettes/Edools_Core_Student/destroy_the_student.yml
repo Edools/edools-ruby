@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://core.edools.com/students/1249.json
+    uri: https://core.edools.com/students/1671.json
     body:
       encoding: US-ASCII
       string: ''
@@ -30,9 +30,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 25 Jul 2014 18:21:42 GMT
+      - Tue, 29 Jul 2014 12:51:12 GMT
       Etag:
-      - '"84dca334843b1c1cc4fdac9d3bd20d8d"'
+      - '"b349c5a68c4741042b54d6f6b46361c8"'
       Server:
       - nginx/1.4.7
       Status:
@@ -44,26 +44,23 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - ee44cacd-d465-4bc0-b000-b3ab960c4198
+      - cb9ec11e-d98a-4d5d-b327-5a5626fb5bb1
       X-Runtime:
-      - '0.082867'
+      - '0.458293'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '921'
+      - '435'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":1249,"first_name":"Ali Ismayilov","last_name":null,"email":"ali@ismailov.info","cpf":null,"phone":"1406312474","skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":"bdf5be8b002ca470131df53e2d4a0f1d07898c08fb4747248a69a4b0f142284c","registrations":[{"id":134,"code":"20140718160250966","school_id":224,"status":"Ativo","enrollments":[{"id":1036,"unlimited":true,"available_until":null,"school_class":{"id":151,"code":null,"school_product":{"id":156,"title":"New
-        course"}}},{"id":1034,"unlimited":true,"available_until":null,"school_class":{"id":151,"code":null,"school_product":{"id":156,"title":"New
-        course"}}},{"id":1032,"unlimited":true,"available_until":null,"school_class":{"id":151,"code":null,"school_product":{"id":156,"title":"New
-        course"}}}]}]}'
+      string: '{"id":1671,"first_name":"Teste","last_name":null,"email":"teste6@edools.com","cpf":null,"phone":"1406638122","skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":503,"code":"20140729123233878","school_id":224,"status":"Trial","enrollments":[]}]}'
     http_version: 
-  recorded_at: Fri, 25 Jul 2014 18:21:43 GMT
+  recorded_at: Tue, 29 Jul 2014 12:51:12 GMT
 - request:
     method: delete
-    uri: https://core.edools.com/students/1249.json
+    uri: https://core.edools.com/students/1671.json
     body:
       encoding: US-ASCII
       string: ''
@@ -89,7 +86,7 @@ http_interactions:
         https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
         style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
       Date:
-      - Fri, 25 Jul 2014 18:21:53 GMT
+      - Tue, 29 Jul 2014 12:51:13 GMT
       Server:
       - nginx/1.4.7
       Status:
@@ -101,9 +98,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 3a0bc1bc-94ef-46d2-81f4-213601a068b6
+      - 874f1da3-1234-4c65-ab41-81e4dd9aa0f9
       X-Runtime:
-      - '0.215198'
+      - '0.494678'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -112,5 +109,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 25 Jul 2014 18:21:54 GMT
+  recorded_at: Tue, 29 Jul 2014 12:51:13 GMT
 recorded_with: VCR 2.9.2

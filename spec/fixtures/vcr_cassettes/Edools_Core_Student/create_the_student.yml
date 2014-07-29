@@ -5,7 +5,7 @@ http_interactions:
     uri: https://core.edools.com/students.json
     body:
       encoding: UTF-8
-      string: '{"user":{"first_name":"Teste","email":"teste1@edools.com","password":"123456","password_confirmation":"123456"}}'
+      string: '{"user":{"first_name":"Teste","email":"teste6@edools.com","password":"123456","password_confirmation":"123456"}}'
     headers:
       Content-Type:
       - application/json
@@ -19,30 +19,47 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 201
+      message: Created
     headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 25 Jul 2014 20:26:53 GMT
+      - Tue, 29 Jul 2014 12:32:34 GMT
+      Etag:
+      - '"a0693be855489080c429aabd6aa7aed3"'
+      Location:
+      - https://core.edools.com/students/1671
       Server:
       - nginx/1.4.7
       Status:
-      - 500 Internal Server Error
+      - 201 Created
       Strict-Transport-Security:
-      - max-age=31536000
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
       X-Request-Id:
-      - b1dcc9a5-d6e2-4520-a0f8-a85986812b22
+      - 1aee233b-b687-4500-a831-0718135741b4
       X-Runtime:
-      - '0.588097'
+      - '1.460170'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '48'
+      - '379'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"status":"500","error":"Internal Server Error"}'
+      string: '{"id":1671,"first_name":"Teste","last_name":null,"email":"teste6@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","credentials":"c67a828ba0843c3c5475cab0fa68121d:791c868df4f753ac761fe56674b756d4"}'
     http_version: 
-  recorded_at: Fri, 25 Jul 2014 20:26:54 GMT
+  recorded_at: Tue, 29 Jul 2014 12:32:34 GMT
 recorded_with: VCR 2.9.2
