@@ -4,7 +4,7 @@ require 'edools/core/paginated_collection'
 module Edools
   module Core
     class Organization < Edools::Core::Base
-      self.collection_parser = PaginatedCollection
+      # self.collection_parser = PaginatedCollection
     end
   end
 end

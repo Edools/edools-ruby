@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/schools/224.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 30 Jul 2014 16:51:26 GMT
+      Etag:
+      - '"d72a1e19e5964ff903611e9af5c73e33"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 5aef4066-58d0-4252-b7d0-04030790a8c1
+      X-Runtime:
+      - '0.026025'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":224,"name":"Demo","subdomain":"demo","domains":["www.example.com"],"email":"contato@edools.com","phone":null,"cnpj":null,"status":"public","logo":"https://cdn.edools.com/assets/images/logos/marca-sem-fundo.png"}'
+    http_version: 
+  recorded_at: Wed, 30 Jul 2014 16:51:26 GMT
+- request:
+    method: put
+    uri: https://core.edools.com/schools/224.json
+    body:
+      encoding: UTF-8
+      string: '{"school":{"id":224,"name":"Demo","subdomain":"demo","domains":["www.example.com"],"email":"contato@edools.com","phone":"12345678","cnpj":null,"status":"public","logo":"https://cdn.edools.com/assets/images/logos/marca-sem-fundo.png"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Date:
+      - Wed, 30 Jul 2014 16:51:27 GMT
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 204 No Content
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 0df93ee8-afbc-454c-baf8-fa292c2e28aa
+      X-Runtime:
+      - '0.129634'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 30 Jul 2014 16:51:27 GMT
+recorded_with: VCR 2.9.2

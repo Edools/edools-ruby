@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/enrollments/1035.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 30 Jul 2014 15:19:15 GMT
+      Etag:
+      - '"79d6d4a145113a8a3c0b65a7e8cac22d"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 873d7f63-9b9d-4804-b7ae-399e9a4067b9
+      X-Runtime:
+      - '0.033650'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1035,"code":null,"status":"expired","unlimited":true,"available_until":null,"lesson_progress_ids":[],"created_at":"2014-07-25
+        17:11:29 UTC","registration":{"id":72,"status":"Trial","code":"20140625164249158"},"school_class":{"id":151,"start_at":null,"end_at":null,"code":null,"school_product":{"id":156,"title":"New
+        course","logo":null}}}'
+    http_version: 
+  recorded_at: Wed, 30 Jul 2014 15:19:15 GMT
+recorded_with: VCR 2.9.2

@@ -1,33 +1,36 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
 describe Edools::Core::Enrollment, :vcr do
-  xit 'finds the enrollment' do
-    enrollment = Edools::Core::Enrollment.find(1249)
+  it 'finds all enrollment' do
+    enrollments = Edools::Core::Enrollment.all(params: { student_id: 1024 })
 
-    expect(enrollment.id).to eq 1249
+    expect(enrollments.count).to eq 2
   end
 
-  xit 'finds all enrollment' do
-    enrollments = Edools::Core::Enrollment.all
+  it 'finds the enrollment' do
+    enrollment = Edools::Core::Enrollment.find(1035)
 
-    expect(enrollments.count).to eq 5
+    expect(enrollment.id).to eq 1035
   end
 
-  xit 'update the enrollment' do
-    enrollment = Edools::Core::Enrollment.find(1249)
-    enrollment.phone = Time.now.to_i.to_s
+  it 'update the enrollment' do
+    enrollment = Edools::Core::Enrollment.find(1035)
+    enrollment.status = 'expired'
 
-    expect(enrollment.save).to be_true
+    expect(enrollment.save).to eq true
   end
 
-  xit 'create the enrollment' do
+  it 'create the enrollment' do
+    student = Edools::Core::Student.find(:first)
+    school_class = Edools::Core::SchoolClass.find(:first, params: { school_product_id: 156 })
+
     enrollment = Edools::Core::Enrollment.new()
 
-    expect(enrollment.save).to be_true
-  end
+    enrollment.registration_id = student.registrations.first.id
+    enrollment.school_class_id = school_class.id
+    enrollment.unlimited = true
+    enrollment.status = 'active'
 
-  xit 'destroy the enrollment' do
-    enrollment = Edools::Core::Enrollment.find(1249)
-    expect(enrollment.destroy).to be_true
+    expect(enrollment.save).to eq true
   end
 end

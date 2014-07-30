@@ -1,33 +1,35 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
 describe Edools::Core::SchoolProduct, :vcr do
-  xit 'finds the school product' do
-    schoolproduct = Edools::Core::SchoolProduct.find(1249)
+  it 'finds all school product' do
+    school_products = Edools::Core::SchoolProduct.all(params: { school_id: 224 })
 
-    expect(schoolproduct.id).to eq 1249
+    expect(school_products.count).to eq 8
   end
 
-  xit 'finds all school product' do
-    schoolproducts = Edools::Core::SchoolProduct.all
+  it 'finds the school product' do
+    school_product = Edools::Core::SchoolProduct.find(170)
 
-    expect(schoolproducts.count).to eq 5
+    expect(school_product.id).to eq 170
   end
 
-  xit 'update the school product' do
-    schoolproduct = Edools::Core::SchoolProduct.find(1249)
-    schoolproduct.phone = Time.now.to_i.to_s
+  it 'update the school product' do
+    school_product = Edools::Core::SchoolProduct.find(170)
+    school_product.description = "test description"
 
-    expect(schoolproduct.save).to be_true
+    expect(school_product.save).to eq true
   end
 
-  xit 'create the school product' do
-    schoolproduct = Edools::Core::SchoolProduct.new()
+  it 'create the school product' do
+    school_product = Edools::Core::SchoolProduct.new()
+    school_product.prefix_options[:school_id] = 224
+    school_product.title = 'teste'
 
-    expect(schoolproduct.save).to be_true
+    expect(school_product.save).to eq true
   end
 
-  xit 'destroy the school product' do
-    schoolproduct = Edools::Core::Schoolproduct.find(1249)
-    expect(schoolproduct.destroy).to be_true
+  it 'destroy the school product' do
+    school_product = Edools::Core::SchoolProduct.find(170)
+    expect(school_product.destroy.code).to eq '204'
   end
 end

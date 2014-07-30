@@ -1,0 +1,183 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/students.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 30 Jul 2014 18:32:16 GMT
+      Etag:
+      - '"a76f65067a4c11e65e0aebbb54bea01b"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - ad87f563-535f-4b7d-8e70-395ed2945e82
+      X-Runtime:
+      - '0.119756'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"students":[{"id":1024,"first_name":"Denise","last_name":"Steiner","email":"denisesteiner@mail.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"http://infinite-woodland-5276.herokuapp.com/assets/demo/avatars/5.jpg","invitation_token":null,"registrations":[{"id":72,"code":"20140625164249158","school_id":224,"status":"Trial","enrollments":[{"id":1035,"unlimited":true,"available_until":null,"school_class":{"id":151,"code":null,"school_product":{"id":156,"title":"New
+        course"}}},{"id":1033,"unlimited":true,"available_until":null,"school_class":{"id":151,"code":null,"school_product":{"id":156,"title":"New
+        course"}}}]}]},{"id":1023,"first_name":"Denise","last_name":"Steiner","email":"denisesteiner@email.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":71,"code":"20140625163503552","school_id":224,"status":"Trial","enrollments":[]}]},{"id":1628,"first_name":"Vinicius","last_name":null,"email":"vinicius@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":486,"code":"20140722122412235","school_id":224,"status":"Ativo","enrollments":[]}]},{"id":1246,"first_name":"Diogo","last_name":"","email":"diogo.beda@gmail.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":133,"code":"20140717200254378","school_id":224,"status":"Trial","enrollments":[]}]},{"id":1636,"first_name":"Teste","last_name":null,"email":"teste123@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":495,"code":"20140725190116088","school_id":224,"status":"Trial","enrollments":[]}]},{"id":1637,"first_name":"Teste","last_name":null,"email":"teste1@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":496,"code":"20140725202653238","school_id":224,"status":"Trial","enrollments":[]}]},{"id":1658,"first_name":"Teste","last_name":null,"email":"teste2@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":498,"code":"20140728175322950","school_id":224,"status":"Trial","enrollments":[]}]},{"id":1668,"first_name":"Teste","last_name":null,"email":"teste3@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":500,"code":"20140729041857904","school_id":224,"status":"Trial","enrollments":[]}]},{"id":1669,"first_name":"Teste","last_name":null,"email":"teste4@edools.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":501,"code":"20140729042807382","school_id":224,"status":"Trial","enrollments":[]}]},{"id":1667,"first_name":"Ali","last_name":null,"email":"ali@ismailov.info","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":"c0996d5219f0d80a09f221e25ee3a9e808ff0366cc699fbdfc5a5dc9f3a82ca4","registrations":[{"id":499,"code":"20140728200528105","school_id":224,"status":"Ativo","enrollments":[]}]}],"current_page":1,"per_page":10,"total_pages":2,"total_count":11}'
+    http_version: 
+  recorded_at: Wed, 30 Jul 2014 18:32:16 GMT
+- request:
+    method: get
+    uri: https://core.edools.com/school_products/156/school_classes.json?school_product_id=156
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 30 Jul 2014 18:32:18 GMT
+      Etag:
+      - '"220880d32e632e3ebbe98855e2e2ca3e"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 57f183e7-7313-423e-aca6-12afb4d53727
+      X-Runtime:
+      - '0.038904'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"school_classes":[{"id":151,"start_at":null,"end_at":null,"code":null,"school_product_id":156},{"id":151,"start_at":null,"end_at":null,"code":null,"school_product_id":156},{"id":151,"start_at":null,"end_at":null,"code":null,"school_product_id":156},{"id":168,"start_at":null,"end_at":null,"code":null,"school_product_id":156},{"id":168,"start_at":null,"end_at":null,"code":null,"school_product_id":156},{"id":168,"start_at":null,"end_at":null,"code":null,"school_product_id":156}]}'
+    http_version: 
+  recorded_at: Wed, 30 Jul 2014 18:32:18 GMT
+- request:
+    method: post
+    uri: https://core.edools.com/enrollments.json
+    body:
+      encoding: UTF-8
+      string: '{"enrollment":{"registration_id":72,"school_class_id":151,"unlimited":true,"status":"active"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 30 Jul 2014 18:32:18 GMT
+      Etag:
+      - '"c2709fd206bacab9c8cefdc3976257e3"'
+      Location:
+      - https://core.edools.com/enrollments/1060
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 6473404f-bd9e-4325-ab01-a685bb14e4c3
+      X-Runtime:
+      - '0.050332'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1060,"status":"active","unlimited":true,"available_until":null,"school_class_id":151,"created_at":"2014-07-30T18:32:18.949Z","updated_at":"2014-07-30T18:32:18.949Z","code":null,"registration_id":72}'
+    http_version: 
+  recorded_at: Wed, 30 Jul 2014 18:32:19 GMT
+recorded_with: VCR 2.9.2
