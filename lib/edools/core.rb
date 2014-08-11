@@ -1,4 +1,5 @@
 require 'edools/core/base'
+require 'edools/core/api_key'
 require 'edools/core/enrollment'
 require 'edools/core/organization'
 require 'edools/core/registration'
