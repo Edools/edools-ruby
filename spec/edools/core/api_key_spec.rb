@@ -1,9 +1,11 @@
 require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 
 describe Edools::Core::ApiKey, :vcr do
-  xit 'finds the api key' do
-    api_key = Edools::Core::Organization.find("token:secret")
+  it 'finds the api key' do
+    api_key = Edools::Core::ApiKey.find("secret:token")
 
-    expect(api_key.id).to eq 1249
+    expect(api_key.token).to eq "token"
+    expect(api_key.secret).to eq "secret"
+    expect(api_key.permissions.count).to eq 1
   end
 end
