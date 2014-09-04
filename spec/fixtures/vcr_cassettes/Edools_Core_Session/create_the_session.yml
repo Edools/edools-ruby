@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/students/1023.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Thu, 04 Sep 2014 19:04:34 GMT
+      Etag:
+      - '"7d2bf5606fd1ea38f789f37033b7659f"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 0a2a36cd-99b5-4ce4-8cd2-9f57f5890adf
+      X-Runtime:
+      - '0.019786'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '438'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1023,"first_name":"Denise","last_name":"Steiner","email":"denisesteiner@email.com","cpf":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"registrations":[{"id":71,"code":"20140625163503552","school_id":224,"status":"Trial","enrollments":[]}]}'
+    http_version: 
+  recorded_at: Thu, 04 Sep 2014 19:04:34 GMT
+- request:
+    method: post
+    uri: https://core.edools.com/users/sign_in.json
+    body:
+      encoding: UTF-8
+      string: '{"user":{"email":"denisesteiner@email.com","password":"edools1234"},"realm":{"id":224,"type":"School"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Thu, 04 Sep 2014 19:04:35 GMT
+      Etag:
+      - '"fcf908064241e2c2e85a9884bb1c118e"'
+      Location:
+      - "/"
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 9a2a5ed8-476f-4e99-ba8b-88b297e0ec7c
+      X-Runtime:
+      - '0.344213'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '7097'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1023,"type":"Student","first_name":"Denise","last_name":"Steiner","email":"denisesteiner@email.com","cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","credentials":"ff0a3080d384f0be15e82f8d4bfbef76:a91ec336e113b6bace5cafd5e46ff91f","permissions":[{"key":"extra_content","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"collaborative_comment","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"exam_answer","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"activity","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"wallet","can_create":false,"can_read":true,"can_update":true,"can_delete":false},{"key":"wallet_credits_payment","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"transaction","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"subscription","can_create":true,"can_read":true,"can_update":true,"can_delete":false},{"key":"product","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"online_debit_payment","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"manual_payment","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"invoice","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"credit_card_payment","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"coupon_token","can_create":false,"can_read":true,"can_update":true,"can_delete":false},{"key":"coupon","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"boleto_payment","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"customer","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"payment","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"item","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"order","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"video_slide_sync","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"video_slide","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"video","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"user","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"text","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"student","can_create":false,"can_read":true,"can_update":true,"can_delete":false},{"key":"slide","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"scorm_package","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"school_product_topic","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"school_product","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"school_class","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"school","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"role","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"review","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"registration","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"permission","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"organization","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"notification","can_create":true,"can_read":true,"can_update":false,"can_delete":true},{"key":"multiple_choice_option","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"multiple_choice_exam_question","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"message","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"media","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"live_stream","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"library_tag","can_create":false,"can_read":false,"can_update":false,"can_delete":false},{"key":"library_resource","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"library","can_create":false,"can_read":false,"can_update":false,"can_delete":false},{"key":"lesson_progress","can_create":true,"can_read":true,"can_update":true,"can_delete":false},{"key":"lesson","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"image","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"html","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"forum_section","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"forum_question","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"forum_answer","can_create":true,"can_read":true,"can_update":true,"can_delete":true},{"key":"forum","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"exam_question_answer","can_create":true,"can_read":true,"can_update":false,"can_delete":false},{"key":"exam_question","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"exam_lesson","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"enrollment","can_create":false,"can_read":true,"can_update":true,"can_delete":false},{"key":"document","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"discursive_exam_question","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"discipline","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"course_module","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"course_content","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"course","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"content_lesson","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"collaborator","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"class_teacher","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"category","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"audio","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"associative_option","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"associative_exam_question","can_create":false,"can_read":true,"can_update":false,"can_delete":false},{"key":"address","can_create":true,"can_read":true,"can_update":true,"can_delete":true}]}'
+    http_version: 
+  recorded_at: Thu, 04 Sep 2014 19:04:35 GMT
+recorded_with: VCR 2.9.2
