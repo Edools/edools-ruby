@@ -1,6 +1,5 @@
 require 'edools/core/base'
 require 'edools/core/paginated_collection'
-# require 'edools/core/content_lesson'
 
 module Edools
   module Core
