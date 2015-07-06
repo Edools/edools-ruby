@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/course_modules/11329.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Mon, 06 Jul 2015 19:13:34 GMT
+      Etag:
+      - '"a99d48f01a6a7d903f66712d0395decd"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - a860ceeb-efb9-43b9-9cac-0d601879970c
+      X-Runtime:
+      - '0.049795'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '250'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6MTEzMjksIm5hbWUiOiJOb21lIGRvIG3Ds2R1bG8iLCJkZXNjcmlw
+        dGlvbiI6bnVsbCwib3JkZXIiOjEsImF2YWlsYWJsZSI6bnVsbCwiY291cnNl
+        X2NvbnRlbnRfaWRzIjpbNTE2NTgsNTE2NTcsNDkwMjBdLCJjcmVhdGVkX2F0
+        IjoiMjAxNS0wNi0xNyAxNjozMDoxMCBVVEMiLCJ1cGRhdGVkX2F0IjoiMjAx
+        NS0wNi0xNyAxNjozMDoxMCBVVEMiLCJwYXJlbnRfY291cnNlX21vZHVsZSI6
+        bnVsbCwiY291cnNlX21vZHVsZXMiOltdfQ==
+    http_version: 
+  recorded_at: Mon, 06 Jul 2015 19:13:34 GMT
+recorded_with: VCR 2.9.2

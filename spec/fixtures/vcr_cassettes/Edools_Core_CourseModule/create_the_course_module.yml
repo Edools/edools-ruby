@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://core.edools.com/courses/1566/course_modules.json
+    body:
+      encoding: UTF-8
+      string: '{"course_module":{"name":"Teste"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Mon, 06 Jul 2015 19:14:52 GMT
+      Etag:
+      - '"dd9ffef403ed2f4f747d136a24d5f6af"'
+      Location:
+      - https://core.edools.com/course_modules/11976
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 233dc3ea-ec18-446d-a73d-60e1045e0bc4
+      X-Runtime:
+      - '0.067167'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '226'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":11976,"name":"Teste","description":null,"order":null,"available":null,"course_content_ids":[],"created_at":"2015-07-06
+        19:14:52 UTC","updated_at":"2015-07-06 19:14:52 UTC","parent_course_module":null,"course_modules":[]}'
+    http_version: 
+  recorded_at: Mon, 06 Jul 2015 19:14:52 GMT
+recorded_with: VCR 2.9.2
