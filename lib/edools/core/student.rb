@@ -1,11 +1,11 @@
 require 'edools/core/base'
-require 'edools/core/paginated_collection'
+require 'edools/paginated_collection'
 require 'edools/core/enrollment'
 
 module Edools
   module Core
     class Student < Edools::Core::Base
-      self.collection_parser = PaginatedCollection
+      self.collection_parser = Edools::PaginatedCollection
 
       has_many :enrollments, class_name: 'edools/core/enrollment'
 

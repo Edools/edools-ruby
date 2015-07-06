@@ -1,9 +1,9 @@
-require 'edools/core/base'
+require 'edools/ecommerce/base'
 require 'edools/paginated_collection'
 
 module Edools
-  module Core
-    class SchoolProduct < Edools::Core::Base
+  module Ecommerce
+    class Product < Edools::Ecommerce::Base
       self.collection_parser = Edools::PaginatedCollection
 
       def self.collection_path(prefix_options = {}, query_options = nil)

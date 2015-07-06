@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ecommerce.edools.com/schools/224/products.json
+    body:
+      encoding: UTF-8
+      string: '{"product":{"name":"Edools API Test","guid":"123","price":0}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.ecommerce.v1+json; charset=utf-8
+      Date:
+      - Mon, 06 Jul 2015 21:20:33 GMT
+      Etag:
+      - '"d29f5033a53c845c28a77fa530f18300"'
+      Location:
+      - https://ecommerce.edools.com/products/123
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - e60bcb78-e0fa-4f12-95da-de21ebd81705
+      X-Runtime:
+      - '0.081558'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '299'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":2671,"guid":"123","name":"Edools API Test","description":null,"price":0,"active":true,"created_at":"2015-07-06T21:20:33.492Z","updated_at":"2015-07-06T21:20:33.492Z","credits":null,"school_id":1,"base_price":0,"promotional":false,"price_in_credits":0,"expiration_period":null,"archived":false}'
+    http_version: 
+  recorded_at: Mon, 06 Jul 2015 21:20:33 GMT
+recorded_with: VCR 2.9.2

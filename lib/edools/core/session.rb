@@ -1,5 +1,5 @@
 require 'edools/core/base'
-require 'edools/core/paginated_collection'
+require 'edools/paginated_collection'
 
 module Edools
   module Core

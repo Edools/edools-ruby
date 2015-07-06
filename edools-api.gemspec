@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
     "lib/edools/core/base.rb",
     "lib/edools/core/enrollment.rb",
     "lib/edools/core/organization.rb",
-    "lib/edools/core/paginated_collection.rb",
+    "lib/edools/paginated_collection.rb",
     "lib/edools/core/registration.rb",
     "lib/edools/core/school.rb",
     "lib/edools/core/school_class.rb",
