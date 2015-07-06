@@ -22,7 +22,7 @@ module Edools
     end
 
     def api_objects
-      ObjectSpace.each_object(Class).select{ |klass| klass < Edools::Core::Base } << Edools::Core::Base
+      ObjectSpace.each_object(Class).select{ |klass| klass < Edools::Base } << Edools::Base
     end
 
     def refresh_config_for_api_objects!
