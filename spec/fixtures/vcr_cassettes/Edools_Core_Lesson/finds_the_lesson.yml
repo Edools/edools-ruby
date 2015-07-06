@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/lessons/52232.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Mon, 06 Jul 2015 19:27:19 GMT
+      Etag:
+      - '"e7458d3cba9e730e536d6616100deee7"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - a8f28b1f-d385-434a-b57a-0bb506b1f9b2
+      X-Runtime:
+      - '0.101895'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":52232,"title":"Edools API Test","type":"ContentLesson","available":null,"description":null,"release_at":null,"release_after":null,"created_at":"2015-07-06
+        19:26:40 UTC","updated_at":"2015-07-06 19:26:40 UTC","media":null,"library_resource":{"id":121418,"library":{"id":2},"library_tags":[]},"courses":[]}'
+    http_version: 
+  recorded_at: Mon, 06 Jul 2015 19:27:19 GMT
+recorded_with: VCR 2.9.2
