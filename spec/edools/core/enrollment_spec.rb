@@ -22,12 +22,10 @@ describe Edools::Core::Enrollment, :vcr do
 
   it 'create the enrollment' do
     student = Edools::Core::Student.find(:first)
-    school_class = Edools::Core::SchoolClass.find(:first, params: { school_product_id: 156 })
 
-    enrollment = Edools::Core::Enrollment.new()
+    enrollment = Edools::Core::Enrollment.new
 
     enrollment.registration_id = student.registrations.first.id
-    enrollment.school_class_id = school_class.id
     enrollment.unlimited = true
     enrollment.status = 'active'
 
