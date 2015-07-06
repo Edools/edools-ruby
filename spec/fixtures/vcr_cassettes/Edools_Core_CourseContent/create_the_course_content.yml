@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://core.edools.com/course_modules/11329/course_contents.json
+    body:
+      encoding: UTF-8
+      string: '{"course_content":{"name":"Edools API Test"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Mon, 06 Jul 2015 19:22:07 GMT
+      Etag:
+      - '"571844e88308200d6d113b8f9f10533d"'
+      Location:
+      - https://core.edools.com/course_contents/52239
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 420bc5e3-9aa8-4343-bb66-e91c09f7a5de
+      X-Runtime:
+      - '0.082276'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '205'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":52239,"course_module_id":11329,"order":null,"content_id":null,"content_type":null,"created_at":"2015-07-06T19:22:07.549Z","updated_at":"2015-07-06T19:22:07.549Z","available":null,"downloadable":null}'
+    http_version: 
+  recorded_at: Mon, 06 Jul 2015 19:22:07 GMT
+recorded_with: VCR 2.9.2
