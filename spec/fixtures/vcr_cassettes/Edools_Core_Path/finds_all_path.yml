@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/paths.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.edools.core.v1+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Mon, 06 Jul 2015 18:24:27 GMT
+      Etag:
+      - '"c518b30f446922475ff74f5694da3655"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 27656142-9997-447d-b3e7-bac5aa69a682
+      X-Runtime:
+      - '0.183890'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2877'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"paths":[{"id":1008,"name":"Teste 123","description":null,"image_url":null,"created_at":"2015-02-06
+        19:03:53 UTC","updated_at":"2015-02-06 19:03:53 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":74776,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":32,"name":"00001
+        TRILHA PARA TESTES E2E","description":null,"image_url":null,"created_at":"2014-12-23
+        18:36:08 UTC","updated_at":"2015-04-24 17:31:44 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":48905,"library":{"id":2},"library_tags":[],"school_products":[{"id":2693,"title":"PATH"},{"id":2641,"title":"Trilha
+        embed"}]}},{"id":1045,"name":"qweqweqweqweqweasss","description":null,"image_url":null,"created_at":"2015-02-27
+        14:17:22 UTC","updated_at":"2015-04-24 17:30:52 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":83764,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":1753,"name":"lalala","description":null,"image_url":null,"created_at":"2015-06-09
+        19:55:45 UTC","updated_at":"2015-06-09 19:55:45 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":114688,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":28,"name":"Teste
+        Vinicius","description":null,"image_url":null,"created_at":"2014-12-23 16:17:53
+        UTC","updated_at":"2014-12-23 16:17:53 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":48891,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":1647,"name":"Uhuuuuuuuuul","description":null,"image_url":null,"created_at":"2015-04-27
+        12:50:56 UTC","updated_at":"2015-05-07 18:34:41 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":105421,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":1711,"name":"Trilha
+        Maurilio","description":null,"image_url":null,"created_at":"2015-05-04 15:08:32
+        UTC","updated_at":"2015-05-04 15:08:32 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":108576,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":1738,"name":"Trilha
+        Day","description":null,"image_url":null,"created_at":"2015-05-28 20:54:19
+        UTC","updated_at":"2015-05-28 20:54:19 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":112675,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":31,"name":"Teste
+        BK","description":null,"image_url":null,"created_at":"2014-12-23 18:35:40
+        UTC","updated_at":"2014-12-23 18:35:40 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":48904,"library":{"id":2},"library_tags":[],"school_products":[]}},{"id":1750,"name":"Teste
+        feliz","description":null,"image_url":null,"created_at":"2015-06-09 13:19:54
+        UTC","updated_at":"2015-06-09 13:19:54 UTC","forum_section_ids":[],"code":null,"library_resource":{"id":114461,"library":{"id":2},"library_tags":[],"school_products":[]}}],"current_page":1,"per_page":10,"total_pages":2,"total_count":20}'
+    http_version: 
+  recorded_at: Mon, 06 Jul 2015 18:24:27 GMT
+recorded_with: VCR 2.9.2
