@@ -4,7 +4,7 @@ require 'edools/core/paginated_collection'
 module Edools
   module Core
     class SchoolProduct < Edools::Core::Base
-      # self.collection_parser = PaginatedCollection
+      self.collection_parser = PaginatedCollection
 
       def self.collection_path(prefix_options = {}, query_options = nil)
         super

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://core.edools.com/school_products/170.json
+    uri: https://core.edools.com/school_products/2718.json
     body:
       encoding: US-ASCII
       string: ''
@@ -28,11 +28,11 @@ http_interactions:
         https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
         style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
       Content-Type:
-      - application/json; charset=utf-8
+      - application/vnd.edools.core.v1+json; charset=utf-8
       Date:
-      - Wed, 30 Jul 2014 17:22:32 GMT
+      - Mon, 06 Jul 2015 19:36:14 GMT
       Etag:
-      - '"05d17c3de1f58eb103b023ee1057ab5e"'
+      - '"da708c002333d0554fbc7a9efb903fca"'
       Server:
       - nginx/1.4.7
       Status:
@@ -44,29 +44,29 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - d662e79d-bc8f-4df8-8050-7ee107daab8a
+      - fc2c1c6a-894d-4f1f-9ad0-d29fdf79d1b4
       X-Runtime:
-      - '0.025945'
+      - '0.180387'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '616'
+      - '741'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":170,"title":"teste","subtitle":null,"description":null,"logo":null,"video_url":null,"video_title":null,"video_description":null,"published":false,"hidden":false,"restricted":false,"allowed_emails":[],"expire_date":null,"available_time_type":"indeterminate","available_time_length":null,"available_time_unit":null,"certification":false,"certification_min_progress":null,"meta_title":null,"meta_description":null,"classes_auto_generation":false,"created_at":"2014-07-30
-        17:21:16 UTC","updated_at":"2014-07-30 17:21:16 UTC","categories":[{"id":471,"title":"Geral","order":1,"flag":false}],"library_resource":null}'
+      string: '{"id":2718,"title":"teste","subtitle":null,"description":null,"logo":null,"video_url":null,"video_title":null,"video_description":null,"published":false,"hidden":false,"restricted":false,"allowed_emails":[],"expire_date":null,"available_time_type":"indeterminate","available_time_length":null,"available_time_unit":null,"certification":false,"certification_min_progress":null,"meta_title":null,"meta_description":null,"meta_keys":null,"classes_auto_generation":false,"max_attendance_type":"indeterminate","max_attendance_length":null,"created_at":"2015-07-06
+        19:33:56 UTC","updated_at":"2015-07-06 19:33:56 UTC","forum_section_ids":[],"gallery_media":[],"school_product_topics":[],"categories":[],"class_teachers":[],"library_resource":null}'
     http_version: 
-  recorded_at: Wed, 30 Jul 2014 17:22:32 GMT
+  recorded_at: Mon, 06 Jul 2015 19:36:14 GMT
 - request:
     method: put
-    uri: https://core.edools.com/school_products/170.json
+    uri: https://core.edools.com/school_products/2718.json
     body:
       encoding: UTF-8
-      string: '{"school_product":{"id":170,"title":"teste","subtitle":null,"description":"test
-        description","logo":null,"video_url":null,"video_title":null,"video_description":null,"published":false,"hidden":false,"restricted":false,"allowed_emails":[],"expire_date":null,"available_time_type":"indeterminate","available_time_length":null,"available_time_unit":null,"certification":false,"certification_min_progress":null,"meta_title":null,"meta_description":null,"classes_auto_generation":false,"created_at":"2014-07-30
-        17:21:16 UTC","updated_at":"2014-07-30 17:21:16 UTC","categories":[{"id":471,"title":"Geral","order":1,"flag":false}],"library_resource":null}}'
+      string: '{"school_product":{"id":2718,"title":"teste","subtitle":null,"description":"Edools
+        API Test","logo":null,"video_url":null,"video_title":null,"video_description":null,"published":false,"hidden":false,"restricted":false,"allowed_emails":[],"expire_date":null,"available_time_type":"indeterminate","available_time_length":null,"available_time_unit":null,"certification":false,"certification_min_progress":null,"meta_title":null,"meta_description":null,"meta_keys":null,"classes_auto_generation":false,"max_attendance_type":"indeterminate","max_attendance_length":null,"created_at":"2015-07-06
+        19:33:56 UTC","updated_at":"2015-07-06 19:33:56 UTC","forum_section_ids":[],"gallery_media":[],"school_product_topics":[],"categories":[],"class_teachers":[],"library_resource":null}}'
     headers:
       Content-Type:
       - application/json
@@ -91,7 +91,7 @@ http_interactions:
         https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
         style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
       Date:
-      - Wed, 30 Jul 2014 17:22:32 GMT
+      - Mon, 06 Jul 2015 19:36:15 GMT
       Server:
       - nginx/1.4.7
       Status:
@@ -103,9 +103,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 45dda393-e014-4243-9240-53c8ada3d079
+      - fba39db5-8a93-497f-8add-bd30ad827da9
       X-Runtime:
-      - '0.083557'
+      - '0.202635'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -114,5 +114,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 30 Jul 2014 17:22:32 GMT
+  recorded_at: Mon, 06 Jul 2015 19:36:15 GMT
 recorded_with: VCR 2.9.2

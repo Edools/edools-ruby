@@ -17,12 +17,22 @@ module Edools
         @current_page = parsed["current_page"]
       end
 
-      private 
+      private
 
       def resource_key(keys)
         (ObjectSpace.each_object(Class)
           .select{ |klass| klass < Edools::Core::Base }
-          .collect { |klass| klass.name.split("::").last.downcase.pluralize } & keys).first
+          .collect { |klass| split_class_name_to_key_match(klass) }.flatten & keys).first
+      end
+
+      def split_class_name_to_key_match(klass)
+        resource_key = klass.name.split("::").last.underscore.pluralize
+
+        if resource_key.include?('_')
+          [resource_key, resource_key.gsub('_')]
+        else
+          resource_key
+        end
       end
 
     end
