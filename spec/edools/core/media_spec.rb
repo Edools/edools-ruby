@@ -11,6 +11,16 @@ describe Edools::Core::Media, :vcr do
     expect(all_media.total_pages). to eq 64
   end
 
+  it 'filters by title' do
+    all_media = Edools::Core::Media.all(params: { title: 'Video-teste-Base' })
+
+    expect(all_media.count).to eq 1
+    expect(all_media.per_page). to eq 10
+    expect(all_media.current_page). to eq 1
+    expect(all_media.total_count). to eq 1
+    expect(all_media.total_pages). to eq 1
+  end
+
   it 'finds the media' do
     media = Edools::Core::Media.find(54344)
 
