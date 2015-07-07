@@ -30,9 +30,9 @@ http_interactions:
       Content-Type:
       - application/vnd.edools.ecommerce.v1+json; charset=utf-8
       Date:
-      - Tue, 07 Jul 2015 13:14:07 GMT
+      - Tue, 07 Jul 2015 13:14:20 GMT
       Etag:
-      - '"52c2a3ed8ff5cfb9e3ee4aa9c0a69450"'
+      - '"02d62ab3d9a9b7c4ba36936574ca383a"'
       Server:
       - nginx/1.4.7
       Status:
@@ -44,35 +44,32 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - db7ca2db-d701-49de-b008-005d339fd216
+      - 42000209-f42c-456a-8e1e-50b61037376c
       X-Runtime:
-      - '0.043499'
+      - '0.048721'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '303'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":2671,"guid":"123","name":"Edools API Test","description":null,"price":0,"price_in_credits":0,"active":true,"credits":null,"school_id":1,"base_price":0,"promotional":false,"expiration_period":null,"type":null,"created_at":"2015-07-06
-        21:20:33 UTC","updated_at":"2015-07-06 21:20:33 UTC","plans":[]}'
+      string: '{"id":2671,"guid":"123","name":"Edools API Test UPDATED","description":null,"price":0,"price_in_credits":0,"active":true,"credits":null,"school_id":1,"base_price":0,"promotional":false,"expiration_period":null,"type":null,"created_at":"2015-07-06
+        21:20:33 UTC","updated_at":"2015-07-07 13:14:08 UTC","plans":[]}'
     http_version: 
-  recorded_at: Tue, 07 Jul 2015 13:14:07 GMT
+  recorded_at: Tue, 07 Jul 2015 13:14:20 GMT
 - request:
-    method: put
+    method: delete
     uri: https://ecommerce.edools.com/products/123.json
     body:
-      encoding: UTF-8
-      string: '{"product":{"id":2671,"guid":"123","name":"Edools API Test UPDATED","description":null,"price":0,"price_in_credits":0,"active":true,"credits":null,"school_id":1,"base_price":0,"promotional":false,"expiration_period":null,"type":null,"created_at":"2015-07-06
-        21:20:33 UTC","updated_at":"2015-07-06 21:20:33 UTC","plans":[]}}'
+      encoding: US-ASCII
+      string: ''
     headers:
-      Content-Type:
-      - application/json
-      Authorization:
-      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
       Accept:
       - application/+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       User-Agent:
@@ -90,7 +87,7 @@ http_interactions:
         https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
         style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
       Date:
-      - Tue, 07 Jul 2015 13:14:08 GMT
+      - Tue, 07 Jul 2015 13:14:21 GMT
       Server:
       - nginx/1.4.7
       Status:
@@ -102,9 +99,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 159af622-b2a5-40bc-a438-6c0b88e4bae7
+      - 787671c9-b936-4fcc-9a76-3ea7122c5344
       X-Runtime:
-      - '0.063516'
+      - '0.093008'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -113,5 +110,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 07 Jul 2015 13:14:08 GMT
+  recorded_at: Tue, 07 Jul 2015 13:14:21 GMT
 recorded_with: VCR 2.9.2

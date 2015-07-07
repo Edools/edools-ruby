@@ -17,7 +17,7 @@ describe Edools::Ecommerce::Product, :vcr do
     expect(product.id).to eq 2671
   end
 
-  xit 'update the product' do
+  it 'update the product' do
     product = Edools::Ecommerce::Product.find(123)
     product.name = "Edools API Test UPDATED"
 
@@ -31,7 +31,7 @@ describe Edools::Ecommerce::Product, :vcr do
     expect(product.save).to eq true
   end
 
-  xit 'destroy the product' do
+  it 'destroy the product' do
     product = Edools::Ecommerce::Product.find(123)
     expect(product.destroy.code).to eq '204'
   end

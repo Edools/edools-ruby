@@ -11,6 +11,11 @@ module Edools
         school_id = prefix_options[:school_id] || query_options.try(:[], :school_id)
         "/schools/#{school_id}/#{collection_name}.#{format.extension}#{query_string(query_options)}"
       end
+      
+      def to_param
+        self.guid
+      end
     end
+
   end
 end
