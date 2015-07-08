@@ -1,24 +1,26 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://core.edools.com/media.json?title=~Video-teste
+    method: post
+    uri: https://core.edools.com/categories.json
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"category":{"title":"Edools API Test","order":25,"school_id":"224"}}'
     headers:
-      Accept:
-      - application/+json
+      Content-Type:
+      - application/json
       Authorization:
       - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/+json
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       User-Agent:
       - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 201
+      message: Created
     headers:
       Cache-Control:
       - max-age=0, private, must-revalidate
@@ -30,13 +32,15 @@ http_interactions:
       Content-Type:
       - application/vnd.edools.core.v1+json; charset=utf-8
       Date:
-      - Tue, 07 Jul 2015 18:46:34 GMT
+      - Wed, 08 Jul 2015 14:40:06 GMT
       Etag:
-      - '"596cca6b34c3c06a0192abb6477857f5"'
+      - '"1db929c65453bc4e9c8fec9c165dc112"'
+      Location:
+      - https://core.edools.com/categories/1432
       Server:
       - nginx/1.4.7
       Status:
-      - 200 OK
+      - 201 Created
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       X-Content-Type-Options:
@@ -44,19 +48,18 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 0b3b0a02-ac86-47c4-a113-70f4de953360
+      - c6ac3b00-2e8c-4336-99cf-d476d76162f2
       X-Runtime:
-      - '0.303022'
+      - '0.092406'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '531'
+      - '157'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"media":[{"id":53839,"type":"Video","title":"Video-teste-Base","description":null,"host":"Wistia","host_key":"nsygjssjj7","status":"ready","message":null,"created_at":"2015-06-25
-        19:07:53 UTC","updated_at":"2015-06-25 19:09:19 UTC","samba_player_key":"154f766fe4bdcf7cd6730542a851372b","usage_count":0,"lesson_ids":[],"extra_content_ids":[],"library_resource":{"id":119502,"library":{"id":2,"samba_player_key":"154f766fe4bdcf7cd6730542a851372b"},"library_tags":[]}}],"current_page":1,"per_page":10,"total_pages":1,"total_count":1}'
+      string: '{"id":1432,"title":"Edools API Test","order":25,"school_id":224,"created_at":"2015-07-08T14:40:06.777Z","updated_at":"2015-07-08T14:40:06.777Z","flag":false}'
     http_version: 
-  recorded_at: Tue, 07 Jul 2015 18:46:34 GMT
+  recorded_at: Wed, 08 Jul 2015 14:40:07 GMT
 recorded_with: VCR 2.9.2

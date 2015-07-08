@@ -1,5 +1,6 @@
 require 'edools/core/base'
 require 'edools/core/api_key'
+require 'edools/core/category'
 require 'edools/core/course'
 require 'edools/core/course_content'
 require 'edools/core/course_module'

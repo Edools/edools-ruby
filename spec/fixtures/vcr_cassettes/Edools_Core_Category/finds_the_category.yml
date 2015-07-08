@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://core.edools.com/media.json?title=~Video-teste
+    uri: https://core.edools.com/categories/1432.json
     body:
       encoding: US-ASCII
       string: ''
@@ -30,9 +30,9 @@ http_interactions:
       Content-Type:
       - application/vnd.edools.core.v1+json; charset=utf-8
       Date:
-      - Tue, 07 Jul 2015 18:46:34 GMT
+      - Wed, 08 Jul 2015 14:40:59 GMT
       Etag:
-      - '"596cca6b34c3c06a0192abb6477857f5"'
+      - '"e89835d5795c345723f45565931640ab"'
       Server:
       - nginx/1.4.7
       Status:
@@ -44,19 +44,18 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 0b3b0a02-ac86-47c4-a113-70f4de953360
+      - c14dddee-8c00-40af-bd07-73c9b24c93d9
       X-Runtime:
-      - '0.303022'
+      - '0.050665'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '531'
+      - '87'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"media":[{"id":53839,"type":"Video","title":"Video-teste-Base","description":null,"host":"Wistia","host_key":"nsygjssjj7","status":"ready","message":null,"created_at":"2015-06-25
-        19:07:53 UTC","updated_at":"2015-06-25 19:09:19 UTC","samba_player_key":"154f766fe4bdcf7cd6730542a851372b","usage_count":0,"lesson_ids":[],"extra_content_ids":[],"library_resource":{"id":119502,"library":{"id":2,"samba_player_key":"154f766fe4bdcf7cd6730542a851372b"},"library_tags":[]}}],"current_page":1,"per_page":10,"total_pages":1,"total_count":1}'
+      string: '{"id":1432,"title":"Edools API Test","order":25,"flag":false,"school_products_count":0}'
     http_version: 
-  recorded_at: Tue, 07 Jul 2015 18:46:34 GMT
+  recorded_at: Wed, 08 Jul 2015 14:41:00 GMT
 recorded_with: VCR 2.9.2

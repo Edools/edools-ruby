@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/categories.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Wed, 08 Jul 2015 14:40:06 GMT
+      Etag:
+      - '"8d12c406054942b2219638314bb00d1a"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 28b4a376-f0e2-4382-9ebd-3dbe23060bae
+      X-Runtime:
+      - '0.129828'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '2038'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjYXRlZ29yaWVzIjpbeyJpZCI6NDcxLCJ0aXRsZSI6IkdlcmFsIiwib3Jk
+        ZXIiOjEsImZsYWciOnRydWUsInNjaG9vbF9wcm9kdWN0c19jb3VudCI6MzR9
+        LHsiaWQiOjU2NSwidGl0bGUiOiJ5ZXQgYW5vdGhlciBjYXRlZ29yeSIsIm9y
+        ZGVyIjoxLCJmbGFnIjp0cnVlLCJzY2hvb2xfcHJvZHVjdHNfY291bnQiOjIw
+        fSx7ImlkIjo1NzIsInRpdGxlIjoibGFzdCBvbmUgbW9yZSIsIm9yZGVyIjoz
+        LCJmbGFnIjp0cnVlLCJzY2hvb2xfcHJvZHVjdHNfY291bnQiOjJ9LHsiaWQi
+        OjU3NSwidGl0bGUiOiJzaG93Iiwib3JkZXIiOjQsImZsYWciOmZhbHNlLCJz
+        Y2hvb2xfcHJvZHVjdHNfY291bnQiOjB9LHsiaWQiOjY0NywidGl0bGUiOiJU
+        b3BvIiwib3JkZXIiOjYsImZsYWciOnRydWUsInNjaG9vbF9wcm9kdWN0c19j
+        b3VudCI6Mn0seyJpZCI6MTI1MSwidGl0bGUiOiJjYXRlZ29yaWEgMSIsIm9y
+        ZGVyIjo3LCJmbGFnIjpmYWxzZSwic2Nob29sX3Byb2R1Y3RzX2NvdW50Ijox
+        fSx7ImlkIjoxMjUyLCJ0aXRsZSI6ImNhdGVnb3JpYSAyIiwib3JkZXIiOjgs
+        ImZsYWciOmZhbHNlLCJzY2hvb2xfcHJvZHVjdHNfY291bnQiOjF9LHsiaWQi
+        OjEyNTMsInRpdGxlIjoiY2F0ZWdvcmlhIDMiLCJvcmRlciI6OSwiZmxhZyI6
+        ZmFsc2UsInNjaG9vbF9wcm9kdWN0c19jb3VudCI6MX0seyJpZCI6MTI1NCwi
+        dGl0bGUiOiJjYXRlZ29yaWEgNCIsIm9yZGVyIjoxMCwiZmxhZyI6ZmFsc2Us
+        InNjaG9vbF9wcm9kdWN0c19jb3VudCI6MH0seyJpZCI6MTI1NSwidGl0bGUi
+        OiJjYXRlZ29yaWEgNSIsIm9yZGVyIjoxMSwiZmxhZyI6ZmFsc2UsInNjaG9v
+        bF9wcm9kdWN0c19jb3VudCI6MX0seyJpZCI6MTI1NiwidGl0bGUiOiJUZXN0
+        ZSIsIm9yZGVyIjoxMiwiZmxhZyI6ZmFsc2UsInNjaG9vbF9wcm9kdWN0c19j
+        b3VudCI6MH0seyJpZCI6MTI1NywidGl0bGUiOiJjYXRlZ29yaWEgNyIsIm9y
+        ZGVyIjoxMywiZmxhZyI6ZmFsc2UsInNjaG9vbF9wcm9kdWN0c19jb3VudCI6
+        MH0seyJpZCI6MTI1OCwidGl0bGUiOiJiaWcgY2F0ZWdvcnkgbmFtZSBoYWhh
+        aGFoYWhoYWhhaGEgbG9sIEhVRUhVRUhFVUVIVSBCUkJSQlJCUiIsIm9yZGVy
+        IjoxNCwiZmxhZyI6ZmFsc2UsInNjaG9vbF9wcm9kdWN0c19jb3VudCI6MH0s
+        eyJpZCI6MTMxNiwidGl0bGUiOiJUZXN0ZSBkZSBjYXRlZ29yaWEiLCJvcmRl
+        ciI6MTUsImZsYWciOmZhbHNlLCJzY2hvb2xfcHJvZHVjdHNfY291bnQiOjB9
+        LHsiaWQiOjEzMTcsInRpdGxlIjoiTm92w61zc2ltYSIsIm9yZGVyIjoxNiwi
+        ZmxhZyI6ZmFsc2UsInNjaG9vbF9wcm9kdWN0c19jb3VudCI6MH0seyJpZCI6
+        MTMxOCwidGl0bGUiOiJPdXRyYSIsIm9yZGVyIjoxNywiZmxhZyI6ZmFsc2Us
+        InNjaG9vbF9wcm9kdWN0c19jb3VudCI6MH0seyJpZCI6MTMxOSwidGl0bGUi
+        OiJOdWV2aSIsIm9yZGVyIjoxOCwiZmxhZyI6ZmFsc2UsInNjaG9vbF9wcm9k
+        dWN0c19jb3VudCI6MH0seyJpZCI6MTMyMCwidGl0bGUiOiJDYXRlZ29yaWNv
+        Iiwib3JkZXIiOjE5LCJmbGFnIjpmYWxzZSwic2Nob29sX3Byb2R1Y3RzX2Nv
+        dW50IjowfSx7ImlkIjoxMzIxLCJ0aXRsZSI6IkluY3JlbWVudCIsIm9yZGVy
+        IjoyMCwiZmxhZyI6ZmFsc2UsInNjaG9vbF9wcm9kdWN0c19jb3VudCI6MH0s
+        eyJpZCI6MTMyMiwidGl0bGUiOiJJbmNyZW1lbnRzIiwib3JkZXIiOjIxLCJm
+        bGFnIjpmYWxzZSwic2Nob29sX3Byb2R1Y3RzX2NvdW50IjowfSx7ImlkIjox
+        MzIzLCJ0aXRsZSI6IlRlc3RlIiwib3JkZXIiOjIyLCJmbGFnIjpmYWxzZSwi
+        c2Nob29sX3Byb2R1Y3RzX2NvdW50IjowfSx7ImlkIjoxNDAwLCJ0aXRsZSI6
+        IlDDoWdpbmEgZGUgQ2F0ZWdvcmlhcyIsIm9yZGVyIjoyMywiZmxhZyI6ZmFs
+        c2UsInNjaG9vbF9wcm9kdWN0c19jb3VudCI6MX0seyJpZCI6MTQwOSwidGl0
+        bGUiOiJDYXRlZ29yaWEiLCJvcmRlciI6MjQsImZsYWciOmZhbHNlLCJzY2hv
+        b2xfcHJvZHVjdHNfY291bnQiOjB9LHsiaWQiOjE0MTAsInRpdGxlIjoiRGVz
+        dGFxdWUiLCJvcmRlciI6MjUsImZsYWciOnRydWUsInNjaG9vbF9wcm9kdWN0
+        c19jb3VudCI6MX1dfQ==
+    http_version: 
+  recorded_at: Wed, 08 Jul 2015 14:40:06 GMT
+recorded_with: VCR 2.9.2

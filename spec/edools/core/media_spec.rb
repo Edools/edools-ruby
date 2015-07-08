@@ -12,7 +12,7 @@ describe Edools::Core::Media, :vcr do
   end
 
   it 'filters by title' do
-    all_media = Edools::Core::Media.all(params: { title: 'Video-teste-Base' })
+    all_media = Edools::Core::Media.all(params: { title: '~Video-teste' })
 
     expect(all_media.count).to eq 1
     expect(all_media.per_page). to eq 10
