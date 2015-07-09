@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://core.edools.com/students/1024/addresses.json
+    body:
+      encoding: UTF-8
+      string: '{"address":{"street":"Abc","number":123,"complement":"Cde","city":"Nikiti","state":"RJ","zip_code":"24210000","district":"Saint
+        Rose"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Thu, 09 Jul 2015 14:47:24 GMT
+      Etag:
+      - '"b32ab436769c507f6d608be0530463a8"'
+      Location:
+      - https://core.edools.com/addresses/1
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - d6db0e71-0a20-45ed-ba4f-01eb9cbd01e1
+      X-Runtime:
+      - '0.283767'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '225'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"street":"Abc","number":123,"complement":"Cde","city":"Nikiti","state":"RJ","zip_code":"24210000","district":"Saint
+        Rose","user_id":1024,"created_at":"2015-07-09T14:47:24.566Z","updated_at":"2015-07-09T14:47:24.566Z"}'
+    http_version: 
+  recorded_at: Thu, 09 Jul 2015 14:47:24 GMT
+recorded_with: VCR 2.9.2
