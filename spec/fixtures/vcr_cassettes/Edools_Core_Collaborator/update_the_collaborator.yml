@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/collaborators/87527.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Tue, 14 Jul 2015 19:12:40 GMT
+      Etag:
+      - '"49913afb771e33c208fe9530525a761c"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 3f1e57c5-6c98-4414-b02c-a12744f497b6
+      X-Runtime:
+      - '0.046034'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '514'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":87527,"first_name":"Teste","last_name":null,"email":"collaborator+teste2@edools.com","username":null,"cpf":null,"rg":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"type":"Collaborator","role":{"name":"Administrador
+        Geral"},"roles":[{"id":141,"name":"Administrador Geral"}],"course_classes":[],"library_resources":[]}'
+    http_version: 
+  recorded_at: Tue, 14 Jul 2015 19:12:40 GMT
+- request:
+    method: put
+    uri: https://core.edools.com/collaborators/87527.json
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":87527,"first_name":"Teste","last_name":null,"email":"collaborator+teste2@edools.com","username":null,"cpf":null,"rg":null,"phone":"1406638122","skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"type":"Collaborator","role":{"name":"Administrador
+        Geral"},"roles":[{"id":141,"name":"Administrador Geral"}],"course_classes":[],"library_resources":[]}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Date:
+      - Tue, 14 Jul 2015 19:12:40 GMT
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 204 No Content
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 6417a375-bc9a-49f2-9d9b-df466a14596b
+      X-Runtime:
+      - '0.084035'
+      X-Xss-Protection:
+      - 1; mode=block
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 14 Jul 2015 19:12:41 GMT
+- request:
+    method: get
+    uri: https://core.edools.com/collaborators/87527.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Tue, 14 Jul 2015 19:12:41 GMT
+      Etag:
+      - '"0863462c642a3ff8d268b58fe91b8b28"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 162d6502-7182-4365-b80d-ac574571b002
+      X-Runtime:
+      - '0.072116'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '522'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":87527,"first_name":"Teste","last_name":null,"email":"collaborator+teste2@edools.com","username":null,"cpf":null,"rg":null,"phone":"1406638122","skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"type":"Collaborator","role":{"name":"Administrador
+        Geral"},"roles":[{"id":141,"name":"Administrador Geral"}],"course_classes":[],"library_resources":[]}'
+    http_version: 
+  recorded_at: Tue, 14 Jul 2015 19:12:41 GMT
+recorded_with: VCR 2.9.2

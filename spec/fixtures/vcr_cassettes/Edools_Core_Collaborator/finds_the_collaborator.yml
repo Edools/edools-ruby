@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://core.edools.com/collaborators/87527.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/+json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Tue, 14 Jul 2015 19:12:32 GMT
+      Etag:
+      - '"49913afb771e33c208fe9530525a761c"'
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 1e59afec-6409-4db2-9a64-00acec38fec0
+      X-Runtime:
+      - '0.065164'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '514'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":87527,"first_name":"Teste","last_name":null,"email":"collaborator+teste2@edools.com","username":null,"cpf":null,"rg":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","invitation_token":null,"type":"Collaborator","role":{"name":"Administrador
+        Geral"},"roles":[{"id":141,"name":"Administrador Geral"}],"course_classes":[],"library_resources":[]}'
+    http_version: 
+  recorded_at: Tue, 14 Jul 2015 19:12:32 GMT
+recorded_with: VCR 2.9.2

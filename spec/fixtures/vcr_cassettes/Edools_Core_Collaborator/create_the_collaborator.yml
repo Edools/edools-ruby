@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://core.edools.com/collaborators.json
+    body:
+      encoding: UTF-8
+      string: '{"user":{"first_name":"Teste","email":"collaborator+teste2@edools.com","password":"123456","password_confirmation":"123456","role_ids":[141]}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Token token=84cc0400cd52f62f2e12309b502889ab:2fee1e06d56ab6394ab9acd4c6a8c62f
+      Accept:
+      - application/+json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Security-Policy-Report-Only:
+      - default-src https://* 'self'; connect-src https://* 'self'; font-src https://*
+        'self'; frame-src https://* 'self'; img-src https://* 'self' data:; media-src
+        https://* 'self'; object-src https://* 'self'; script-src https://* 'self';
+        style-src https://* 'self'; report-uri https://core.edools.com/uri-directive;
+      Content-Type:
+      - application/vnd.edools.core.v1+json; charset=utf-8
+      Date:
+      - Tue, 14 Jul 2015 19:10:06 GMT
+      Etag:
+      - '"21b21ee83ee11b498dd331bd39877966"'
+      Location:
+      - https://core.edools.com/collaborators/87527
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - d63875cd-f138-4019-94d4-e88ce95c91d7
+      X-Runtime:
+      - '0.431943'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '403'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":87527,"first_name":"Teste","last_name":null,"email":"collaborator+teste2@edools.com","cpf":null,"rg":null,"phone":null,"skype":null,"twitter":null,"facebook":null,"company_name":null,"company_position":null,"born_at":null,"biography":null,"cover_image_url":"https://cdn.edools.com/assets/images/users/default.jpeg","credentials":"6b950c5cce515d4a67c0b10bf5ec3414:748fa0e39ff3a21463b32a0d7bcc8f46"}'
+    http_version: 
+  recorded_at: Tue, 14 Jul 2015 19:10:06 GMT
+recorded_with: VCR 2.9.2
